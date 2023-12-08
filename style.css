@@ -1,0 +1,51 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.color-picker-container {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+#colorRangeWrapper {
+    width: 332px;
+    height: 61px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+    top: 150px;
+}
+
+#colorRangeContainer {
+    position: relative;
+    top: -20px; 
+    margin-top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-box {
+    display: block;
+    width: 332px;
+    height: 168px;
+    margin: 0;
+}
+
+.small-color-box {
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+}
+
+.white-rectangle{
+    width: 332px;
+    height: 61px;
+}
