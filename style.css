@@ -19,8 +19,39 @@ body {
     align-items: center;
     margin: 20px auto;
     position: relative;
-    left: 185px; /* Move right by 185px */
+    left: 450px; /* Move right by 185px */
     top: -10px;
+}
+
+#leftColorRangeWrapper {
+    width: 332px; /* Same width as colorRangeWrapper */
+    height: 901px; /* Same height as colorRangeWrapper */
+    background-color: white; /* Same background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    position: absolute; /* To position it on the left side */
+    left: 680px; /* Adjust this value to set the exact X coordinate */
+    top: -10px; /* Same Y coordinate as colorRangeContainer */
+}
+
+.purple-rectangle {
+    width: 332px;
+    height: 628px;
+    background-color: #884ca4;
+    position: relative; /* To position the text inside */
+}
+
+.formula-guide {
+    color: white;
+    font-size: 58px;
+    position: absolute; /* Absolute positioning inside purple-rectangle */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    transform: rotate(-90deg); /* Rotate text 90 degrees counterclockwise */
+    transform-origin: left top;
+    top: 600px;
 }
 
 #colorRangeContainer {
