@@ -49,9 +49,23 @@ body {
     position: absolute; /* Absolute positioning inside purple-rectangle */
     top: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
-    transform: rotate(-90deg); /* Rotate text 90 degrees counterclockwise */
-    transform-origin: left top;
-    top: 600px;
+    transform: rotate(-90deg);
+    transform-origin: right top; /* Pivots from the top-right corner */
+    top: 70px; /* Adjust this if necessary to fine-tune the vertical position */
+    left: -151%; /* Places the 'GUIDE' at the end of the 'FORMULA' */
+    white-space: nowrap; /* Ensures the text does not wrap */
+}
+
+.solid-uncoated {
+    color: white; /* Or any other color that contrasts with the purple */
+    font-size: 43px; /* Adjust as needed */
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    left: -250px; /* This aligns the left side of the text with the left side of 'formula-guide'. */
+    top: 250px; /* This positions the text below 'formula-guide'. Adjust as necessary. */
+    font-size: 43px; /* Adjust as needed */
+    white-space: nowrap;
 }
 
 #colorRangeContainer {
