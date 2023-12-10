@@ -12,19 +12,20 @@ body {
 
 #colorRangeWrapper {
     width: 332px;
-    height: 61px;
+    height: 901px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px auto;
     position: relative;
-    top: 150px;
+    left: 185px; /* Move right by 185px */
+    top: -10px;
 }
 
 #colorRangeContainer {
-    position: relative;
-    top: -20px; 
+    position: absolute; /* Changed to absolute */
+    top: 61px; /* Position relative to colorRangeWrapper */
     margin-top: 0;
     text-align: center;
     display: flex;
@@ -43,9 +44,4 @@ body {
     display: inline-block;
     width: 10px;
     height: 50px;
-}
-
-.white-rectangle{
-    width: 332px;
-    height: 61px;
 }
