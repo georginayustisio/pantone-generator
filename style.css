@@ -45,3 +45,29 @@ body {
     width: 10px;
     height: 50px;
 }
+
+.pantone-label {
+    color: black; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    font-size: 25px; /* Adjust the size as needed */
+    display: flex; /* Use flex to align text and square */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Center items horizontally */
+    margin-top: 15px;
+    margin-bottom: 10px; /* Space below the label */
+    width: 100%;
+}
+
+.pantone-label span { /* Targeting the text specifically */
+    padding-right: 20px; /* Adds space to the right of the text */
+    margin-left: 20px;
+}
+
+.black-square {
+    width: 20px; /* Width of the black square */
+    height: 20px; /* Height of the black square */
+    background-color: black; /* Color of the square */
+    margin-left: 10px; /* Space between the text and the square */
+    margin-right: 20px;
+}
+
