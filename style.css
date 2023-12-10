@@ -6,8 +6,27 @@ body {
 
 .color-picker-container {
     position: absolute;
-    left: 10px;
-    top: 100px;
+    left: 200px;
+    top: 360px;
+}
+
+#colorPicker {
+    width: 152px; /* Larger width */
+    height: 152px; /* Larger height */
+    border: none; /* Optional: Removes the border */
+    cursor: pointer; /* Changes cursor to indicate clickability */
+    /* Add any other styling as required */
+}
+
+#fillButton {
+    background-color: #fff; /* Background color for the button */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding for size */
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Change cursor to indicate clickability */
+    /* Add other button-like styling as needed */
 }
 
 #colorRangeWrapper {
@@ -46,6 +65,7 @@ body {
 .formula-guide {
     color: white;
     font-size: 58px;
+    font-weight: 700;
     position: absolute; /* Absolute positioning inside purple-rectangle */
     top: 10px; /* Adjust as needed */
     left: 10px; /* Adjust as needed */
@@ -59,6 +79,7 @@ body {
 .solid-uncoated {
     color: white; /* Or any other color that contrasts with the purple */
     font-size: 43px; /* Adjust as needed */
+    font-weight: 700;
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: right top;
@@ -67,6 +88,34 @@ body {
     font-size: 43px; /* Adjust as needed */
     white-space: nowrap;
 }
+
+.pantone-text-below {
+    color: black; /* Text color */
+    font-family: 'Montserrat', sans-serif; /* Font family */
+    font-size: 52px; /* Text size */
+    font-weight: 700;
+    position: absolute;
+    bottom: 175px; /* Slightly above the bottom of the wrapper */
+    left: 50%; /* Horizontally centered */
+    transform: translateX(-50%); /* Center the text based on its width */
+}
+
+.ink-formulas-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Semi-bold */
+    font-size: 14px; /* Adjust as needed */
+    color: black;
+    width: 133px;
+    height: 80px;
+    position: absolute;
+    bottom: 75px; /* Increased offset to position below 'PANTONE' */
+    left: 30%;
+    transform: translateX(-50%);
+    text-align:left;
+    z-index: 10; /* Ensure it's on top of other elements */
+}
+
+
 
 #colorRangeContainer {
     position: absolute; /* Changed to absolute */
@@ -95,6 +144,7 @@ body {
     color: black; /* Text color */
     font-family: 'Montserrat', sans-serif; /* Font family */
     font-size: 25px; /* Adjust the size as needed */
+    font-weight: 700;
     display: flex; /* Use flex to align text and square */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Center items horizontally */

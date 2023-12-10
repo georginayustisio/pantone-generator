@@ -1,8 +1,8 @@
-document.getElementById('generateButton').addEventListener('click', function() {
-    console.log('Button clicked');
+document.getElementById('fillButton').addEventListener('click', function() {
     const selectedColor = document.getElementById('colorPicker').value;
     fetchColorRange(selectedColor);
 });
+
 
 async function fetchColorRange(hexColor) {
     const apiUrl = 'https://colour-web-service.onrender.com/generate-palette';
